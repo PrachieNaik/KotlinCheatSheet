@@ -1,6 +1,6 @@
 # KotlinCheatSheet
 
-//most frequently used functions for reading data from console
+Frequently used functions for reading data from console
 
     fun readln(): String = readLine()!!
     fun readlnInt(): Int = readln().toInt()
@@ -26,7 +26,7 @@
         return arrayOfArray
     }
     
-//add-ons
+Add-ons
 
     fun readlnByte() = readln().toByte()
     fun readlnShort() = readln().toShort()
@@ -75,7 +75,7 @@
 
     fun isWhiteSpace(c: Char) = c in " \r\n\t"
 
-// JVM-only targeting code
+JVM-only targeting functions
 
     // readString() via sequence is slightly faster than Scanner
     fun readString() = generateSequence { System.`in`.read().toChar() }.dropWhile { isWhiteSpace(it) }
